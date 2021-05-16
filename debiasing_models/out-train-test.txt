@@ -1,0 +1,235 @@
+
+(deep-learning) C> python train.py --save_dir origin_1 --log_dir origin_0 --batch_size 32 --num_epochs 15 --learning_rate 0.0001
+ImSituVerbGender dataloader
+loading train annotations..........
+dataset size: 24301
+man size : 14199 and woman size: 10102
+ImSituVerbGender dataloader
+loading val annotations..........
+dataset size: 7730
+man size : 4457 and woman size: 3273
+Build a VerbClassification Model
+Load weights from Resnet18/50 done
+num_trainable_params: 432339
+before training, evaluate the model
+Val 0:   0%|                                                         | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 0: 100%|████████████████████| 242/242 [02:25<00:00,  1.67it/s, completed=7730, loss=5.43] 
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 0, meanAP: 0.73, meanAP_man: 0.77, meanAP_woman: nan
+Train 1:   0%|                                                       | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 1: 100%|██████████████████| 760/760 [07:47<00:00,  1.62it/s, completed=24301, loss=4.9] 
+man size: 14199 woman size: 10102
+Train epoch  : 1, meanAP: 5.80, meanAP_man: 5.62, meanAP_woman: 6.26
+Val 1:   0%|                                                         | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 1: 100%|████████████████████| 242/242 [02:24<00:00,  1.68it/s, completed=7730, loss=4.39] 
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 1, meanAP: 18.64, meanAP_man: 18.54, meanAP_woman: nan
+Train 2:   0%|                                                       | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 2: 100%|█████████████████| 760/760 [07:46<00:00,  1.63it/s, completed=24301, loss=4.09] 
+man size: 14199 woman size: 10102
+Train epoch  : 2, meanAP: 16.20, meanAP_man: 15.69, meanAP_woman: 15.24
+Val 2:   0%|                                                         | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 2: 100%|████████████████████| 242/242 [02:25<00:00,  1.67it/s, completed=7730, loss=3.84] 
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 2, meanAP: 23.71, meanAP_man: 23.82, meanAP_woman: nan
+Train 3:   0%|                                                       | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 3: 100%|█████████████████| 760/760 [07:46<00:00,  1.63it/s, completed=24301, loss=3.64] 
+man size: 14199 woman size: 10102
+Train epoch  : 3, meanAP: 22.33, meanAP_man: 21.31, meanAP_woman: 21.12
+Val 3:   0%|                                                         | 0/242 [00:00<?, ?it/sC 
+:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 3: 100%|████████████████████| 242/242 [02:22<00:00,  1.70it/s, completed=7730, loss=3.52]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 3, meanAP: 26.28, meanAP_man: 26.21, meanAP_woman: nan
+Train 4:   0%|                                                       | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 4: 100%|█████████████████| 760/760 [07:46<00:00,  1.63it/s, completed=24301, loss=3.37]
+man size: 14199 woman size: 10102
+Train epoch  : 4, meanAP: 25.95, meanAP_man: 24.68, meanAP_woman: 24.40
+Val 4:   0%|                                                         | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 4: 100%|████████████████████| 242/242 [02:22<00:00,  1.70it/s, completed=7730, loss=3.31] 
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 4, meanAP: 27.87, meanAP_man: 27.65, meanAP_woman: nan
+Train 5:   0%|                                                       | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 5: 100%|█████████████████| 760/760 [07:47<00:00,  1.63it/s, completed=24301, loss=3.17] 
+man size: 14199 woman size: 10102
+Train epoch  : 5, meanAP: 28.59, meanAP_man: 27.07, meanAP_woman: 26.50
+Val 5:   0%|                                                         | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 5: 100%|█████████████████████| 242/242 [02:22<00:00,  1.70it/s, completed=7730, loss=3.2] 
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 5, meanAP: 28.91, meanAP_man: 28.40, meanAP_woman: nan
+Train 6:   0%|                                                       | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 6: 100%|█████████████████| 760/760 [07:48<00:00,  1.62it/s, completed=24301, loss=3.03] 
+man size: 14199 woman size: 10102
+Train epoch  : 6, meanAP: 30.48, meanAP_man: 28.93, meanAP_woman: 28.23
+Val 6:   0%|                                                         | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 6: 100%|█████████████████████| 242/242 [02:22<00:00,  1.70it/s, completed=7730, loss=3.1] 
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 6, meanAP: 29.68, meanAP_man: 29.12, meanAP_woman: nan
+Train 7:   0%|                                                       | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 7: 100%|█████████████████| 760/760 [07:51<00:00,  1.61it/s, completed=24301, loss=2.93] 
+man size: 14199 woman size: 10102
+Train epoch  : 7, meanAP: 32.11, meanAP_man: 30.60, meanAP_woman: 30.20
+Val 7:   0%|                                                         | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 7: 100%|████████████████████| 242/242 [02:28<00:00,  1.63it/s, completed=7730, loss=3.04]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 7, meanAP: 30.32, meanAP_man: 29.64, meanAP_woman: nan
+Train 8:   0%|                                                       | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 8: 100%|█████████████████| 760/760 [07:48<00:00,  1.62it/s, completed=24301, loss=2.84]
+man size: 14199 woman size: 10102
+Train epoch  : 8, meanAP: 33.59, meanAP_man: 31.81, meanAP_woman: 31.94
+Val 8:   0%|                                                         | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 8: 100%|████████████████████| 242/242 [02:22<00:00,  1.70it/s, completed=7730, loss=2.98]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 8, meanAP: 30.83, meanAP_man: 30.21, meanAP_woman: nan
+Train 9:   0%|                                                       | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 9: 100%|█████████████████| 760/760 [07:46<00:00,  1.63it/s, completed=24301, loss=2.76]
+man size: 14199 woman size: 10102
+Train epoch  : 9, meanAP: 34.65, meanAP_man: 32.66, meanAP_woman: 33.13
+Val 9:   0%|                                                         | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 9: 100%|████████████████████| 242/242 [02:22<00:00,  1.70it/s, completed=7730, loss=2.96]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 9, meanAP: 31.28, meanAP_man: 30.60, meanAP_woman: nan
+Train 10:   0%|                                                      | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 10: 100%|█████████████████| 760/760 [07:46<00:00,  1.63it/s, completed=24301, loss=2.7]
+man size: 14199 woman size: 10102
+Train epoch  : 10, meanAP: 35.96, meanAP_man: 34.27, meanAP_woman: 33.78
+Val 10:   0%|                                                        | 0/242 [00:00<?, ?it/sC 
+:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 10: 100%|███████████████████| 242/242 [02:22<00:00,  1.70it/s, completed=7730, loss=2.93]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 10, meanAP: 31.65, meanAP_man: 31.10, meanAP_woman: nan
+Train 11:   0%|                                                      | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 11: 100%|████████████████| 760/760 [07:47<00:00,  1.63it/s, completed=24301, loss=2.64]
+man size: 14199 woman size: 10102
+Train epoch  : 11, meanAP: 36.82, meanAP_man: 34.79, meanAP_woman: 34.76
+Val 11:   0%|                                                        | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 11: 100%|███████████████████| 242/242 [02:22<00:00,  1.70it/s, completed=7730, loss=2.92] 
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 11, meanAP: 31.73, meanAP_man: 31.10, meanAP_woman: nan
+Train 12:   0%|                                                      | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 12: 100%|████████████████| 760/760 [07:46<00:00,  1.63it/s, completed=24301, loss=2.59] 
+man size: 14199 woman size: 10102
+Train epoch  : 12, meanAP: 37.94, meanAP_man: 35.90, meanAP_woman: 35.82
+Val 12:   0%|                                                        | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 12: 100%|███████████████████| 242/242 [02:39<00:00,  1.51it/s, completed=7730, loss=2.87] 
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 12, meanAP: 32.21, meanAP_man: 31.49, meanAP_woman: nan
+Train 13:   0%|                                                      | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 13: 100%|████████████████| 760/760 [11:25<00:00,  1.11it/s, completed=24301, loss=2.56] 
+man size: 14199 woman size: 10102
+Train epoch  : 13, meanAP: 38.66, meanAP_man: 37.03, meanAP_woman: 36.06
+Val 13:   0%|                                                        | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 13: 100%|███████████████████| 242/242 [03:24<00:00,  1.18it/s, completed=7730, loss=2.86] 
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 13, meanAP: 32.40, meanAP_man: 31.86, meanAP_woman: nan
+Train 14:   0%|                                                      | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 14: 100%|████████████████| 760/760 [08:49<00:00,  1.44it/s, completed=24301, loss=2.51] 
+man size: 14199 woman size: 10102
+Train epoch  : 14, meanAP: 39.89, meanAP_man: 38.06, meanAP_woman: 37.55
+Val 14:   0%|                                                        | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 14: 100%|███████████████████| 242/242 [02:26<00:00,  1.65it/s, completed=7730, loss=2.87] 
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 14, meanAP: 32.30, meanAP_man: 31.63, meanAP_woman: nan
+Train 15:   0%|                                                      | 0/760 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Train 15: 100%|████████████████| 760/760 [07:59<00:00,  1.59it/s, completed=24301, loss=2.48]
+man size: 14199 woman size: 10102
+Train epoch  : 15, meanAP: 40.50, meanAP_man: 38.59, meanAP_woman: 38.59
+Val 15:   0%|                                                        | 0/242 [00:00<?, ?it/s]C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\torch\nn\_reduction.py:13: UserWarning: reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.       
+  warnings.warn("reduction='elementwise_mean' is deprecated, please use reduction='mean' instead.")
+Val 15: 100%|███████████████████| 242/242 [02:27<00:00,  1.64it/s, completed=7730, loss=2.87]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+C:\Users\dhany\anaconda3\envs\deep-learning\lib\site-packages\sklearn\metrics\_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+man size: 4457 woman size: 3273
+Val epoch  : 15, meanAP: 32.60, meanAP_man: 31.99, meanAP_woman: nan
